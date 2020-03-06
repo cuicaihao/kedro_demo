@@ -8,6 +8,15 @@ from kedro_tutorial.pipelines.data_engineering.nodes import (
 
 
 def create_pipeline(**kwargs):
+    """Create the data engineering  pipeline.
+
+    Args:
+        kwargs: Ignore any additional arguments added in the future.
+
+    Returns:
+        A mapping from a pipeline name to a ``Pipeline`` object.
+
+    """
     return Pipeline(
         [
             node(

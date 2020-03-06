@@ -1,0 +1,280 @@
+{
+    "edges": [
+        {
+            "source": "93d834e1",
+            "target": "43ba0268"
+        },
+        {
+            "source": "872981f9",
+            "target": "43ba0268"
+        },
+        {
+            "source": "f6d9538c",
+            "target": "43ba0268"
+        },
+        {
+            "source": "c071dac9",
+            "target": "0d838494"
+        },
+        {
+            "source": "493ad53a",
+            "target": "0d838494"
+        },
+        {
+            "source": "7b2c6e04",
+            "target": "0d838494"
+        },
+        {
+            "source": "0d838494",
+            "target": "d7b83b05"
+        },
+        {
+            "source": "aed46479",
+            "target": "1d7bab50"
+        },
+        {
+            "source": "1d7bab50",
+            "target": "493ad53a"
+        },
+        {
+            "source": "f1d596c2",
+            "target": "a332a7f9"
+        },
+        {
+            "source": "a332a7f9",
+            "target": "c071dac9"
+        },
+        {
+            "source": "d7b83b05",
+            "target": "3527fcb7"
+        },
+        {
+            "source": "e8344353",
+            "target": "3527fcb7"
+        },
+        {
+            "source": "44c40518",
+            "target": "3527fcb7"
+        },
+        {
+            "source": "3527fcb7",
+            "target": "cae2d1c7"
+        },
+        {
+            "source": "3527fcb7",
+            "target": "872981f9"
+        },
+        {
+            "source": "3527fcb7",
+            "target": "9ca016a8"
+        },
+        {
+            "source": "3527fcb7",
+            "target": "f6d9538c"
+        },
+        {
+            "source": "cae2d1c7",
+            "target": "b12e81ea"
+        },
+        {
+            "source": "9ca016a8",
+            "target": "b12e81ea"
+        },
+        {
+            "source": "b12e81ea",
+            "target": "93d834e1"
+        }
+    ],
+    "nodes": [
+        {
+            "full_name": "evaluate_model",
+            "id": "43ba0268",
+            "name": "Evaluate Model",
+            "tags": [
+                "ds_tag"
+            ],
+            "type": "task"
+        },
+        {
+            "full_name": "create_master_table",
+            "id": "0d838494",
+            "name": "master_table",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "task"
+        },
+        {
+            "full_name": "preprocess_companies",
+            "id": "1d7bab50",
+            "name": "preprocessing_companies",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "task"
+        },
+        {
+            "full_name": "preprocess_shuttles",
+            "id": "a332a7f9",
+            "name": "preprocessing_shuttles",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "task"
+        },
+        {
+            "full_name": "split_data",
+            "id": "3527fcb7",
+            "name": "Split Data",
+            "tags": [
+                "ds_tag"
+            ],
+            "type": "task"
+        },
+        {
+            "full_name": "train_model",
+            "id": "b12e81ea",
+            "name": "Train Model",
+            "tags": [
+                "ds_tag",
+                "regressor-node"
+            ],
+            "type": "task"
+        },
+        {
+            "full_name": "X_test",
+            "id": "872981f9",
+            "name": "X Test",
+            "tags": [
+                "ds_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "X_train",
+            "id": "cae2d1c7",
+            "name": "X Train",
+            "tags": [
+                "ds_tag",
+                "regressor-node"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "companies",
+            "id": "aed46479",
+            "name": "Companies",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "master_table",
+            "id": "d7b83b05",
+            "name": "Master Table",
+            "tags": [
+                "de_tag",
+                "ds_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "params:random_state",
+            "id": "44c40518",
+            "name": "Params:random State",
+            "tags": [
+                "ds_tag"
+            ],
+            "type": "parameters"
+        },
+        {
+            "full_name": "params:test_size",
+            "id": "e8344353",
+            "name": "Params:test Size",
+            "tags": [
+                "ds_tag"
+            ],
+            "type": "parameters"
+        },
+        {
+            "full_name": "preprocessed_companies",
+            "id": "493ad53a",
+            "name": "Preprocessed Companies",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "preprocessed_shuttles",
+            "id": "c071dac9",
+            "name": "Preprocessed Shuttles",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "regressor",
+            "id": "93d834e1",
+            "name": "Regressor",
+            "tags": [
+                "ds_tag",
+                "regressor-node"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "reviews",
+            "id": "7b2c6e04",
+            "name": "Reviews",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "shuttles",
+            "id": "f1d596c2",
+            "name": "Shuttles",
+            "tags": [
+                "de_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "y_test",
+            "id": "f6d9538c",
+            "name": "Y Test",
+            "tags": [
+                "ds_tag"
+            ],
+            "type": "data"
+        },
+        {
+            "full_name": "y_train",
+            "id": "9ca016a8",
+            "name": "Y Train",
+            "tags": [
+                "ds_tag",
+                "regressor-node"
+            ],
+            "type": "data"
+        }
+    ],
+    "tags": [
+        {
+            "id": "de_tag",
+            "name": "De Tag"
+        },
+        {
+            "id": "ds_tag",
+            "name": "Ds Tag"
+        },
+        {
+            "id": "regressor-node",
+            "name": "Regressor Node"
+        }
+    ]
+}
