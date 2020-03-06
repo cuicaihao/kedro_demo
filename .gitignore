@@ -1,6 +1,11 @@
 ##########################
 # KEDRO PROJECT
 
+# Extra Packages
+__pycache__
+.ipython
+.vscode
+
 # ignore all local configuration
 conf/local/**
 !conf/local/.gitkeep
