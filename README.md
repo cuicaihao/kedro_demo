@@ -1,5 +1,15 @@
 # Kedro Tutorial
 
+```bash
+conda create --name kedro python=3.7
+
+pip install kedro
+
+pip install kedro-viz
+
+
+```
+
 ## Overview
 
 This is your new Kedro project, which was generated using `Kedro 0.15.8` by running:
@@ -13,11 +23,12 @@ Take a look at the [documentation](https://kedro.readthedocs.io) to get started.
 ## Rules and guidelines
 
 In order to get the best out of the template:
- * Please don't remove any lines from the `.gitignore` file provided
- * Make sure your results can be reproduced by following a data engineering convention, e.g. the one we suggest [here](https://kedro.readthedocs.io/en/stable/06_resources/01_faq.html#what-is-data-engineering-convention)
- * Don't commit any data to your repository
- * Don't commit any credentials or local configuration to your repository
- * Keep all credentials or local configuration in `conf/local/`
+
+- Please don't remove any lines from the `.gitignore` file provided
+- Make sure your results can be reproduced by following a data engineering convention, e.g. the one we suggest [here](https://kedro.readthedocs.io/en/stable/06_resources/01_faq.html#what-is-data-engineering-convention)
+- Don't commit any data to your repository
+- Don't commit any credentials or local configuration to your repository
+- Keep all credentials or local configuration in `conf/local/`
 
 ## Installing dependencies
 
@@ -46,7 +57,6 @@ kedro test
 ```
 
 To configure the coverage threshold, please have a look at the file `.coveragerc`.
-
 
 ### Working with Kedro from notebooks
 
@@ -88,12 +98,15 @@ scope: `proj_dir`, `proj_name`, `conf`, `io`, `parameters` and `startup_error`.
 Once you are happy with a notebook, you may want to move your code over into the Kedro project structure for the next stage in your development. This is done through a mixture of [cell tagging](https://jupyter-notebook.readthedocs.io/en/stable/changelog.html#cell-tags) and Kedro CLI commands.
 
 By adding the `node` tag to a cell and running the command below, the cell's source code will be copied over to a Python file within `src/<package_name>/nodes/`.
+
 ```
 kedro jupyter convert <filepath_to_my_notebook>
 ```
-> *Note:* The name of the Python file matches the name of the original notebook.
+
+> _Note:_ The name of the Python file matches the name of the original notebook.
 
 Alternatively, you may want to transform all your notebooks in one go. To this end, you can run the following command to convert all notebook files found in the project root directory and under any of its sub-folders.
+
 ```
 kedro jupyter convert --all
 ```
@@ -102,7 +115,7 @@ kedro jupyter convert --all
 
 In order to automatically strip out all output cell contents before committing to `git`, you can run `kedro activate-nbstripout`. This will add a hook in `.git/config` which will run `nbstripout` before anything is committed to `git`.
 
-> *Note:* Your output cells will be left intact locally.
+> _Note:_ Your output cells will be left intact locally.
 
 ## Package the project
 
