@@ -160,6 +160,6 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
+.vscode/
 # mypy
 .mypy_cache/
